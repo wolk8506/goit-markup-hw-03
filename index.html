@@ -16,7 +16,7 @@
   </head>
   <body>
     <header>
-      <section class="container navigation">
+      <div class="container navigation">
         <nav>
           <a class="link logo" href="./">Web<span class="logo-top">Studio</span></a>
           <ul class="list pages">
@@ -29,19 +29,19 @@
           <li><a class="link contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
           <li><a class="link contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
-      </section>
+      </div>
     </header>
     <main>
       <!-- Герой -->
-      <section class="hiro">
+      <section class="hero">
         <div class="container">
-          <h1 class="hiro-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="btn hiro-btn" type="button">Заказать услугу</button>
+          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+          <button class="btn hero-btn" type="button">Заказать услугу</button>
         </div>
       </section>
       <!-- Особенности -->
       <section class="container section">
-        <h2 class="section-title">Особенности</h2>
+        <h2 class="section-title visually-hidden">Особенности</h2>
         <ul class="list specialty">
           <li>
             <h3 class="specialty-title">Внимание к деталям</h3>
@@ -75,37 +75,45 @@
         </ul>
       </section>
       <!-- Наша команда -->
-      <div class="section-command">
-        <section class="container section">
+      <section class="section-command section">
+        <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="list mans">
             <li>
               <img src="./images/man1.jpg" alt="Игорь Демьяненко" width="270" height="260" />
-              <h3 class="man-name">Игорь Демьяненко</h3>
-              <p class="man-profession" lang="en">Product Designer</p>
+              <div class="man">
+                <h3 class="man-name">Игорь Демьяненко</h3>
+                <p class="man-profession" lang="en">Product Designer</p>
+              </div>
             </li>
             <li>
               <img src="./images/man2.jpg" alt="Ольга Репина" width="270" height="260" />
-              <h3 class="man-name">Ольга Репина</h3>
-              <p class="man-profession" lang="en">Frontend Developer</p>
+              <div class="man">
+                <h3 class="man-name">Ольга Репина</h3>
+                <p class="man-profession" lang="en">Frontend Developer</p>
+              </div>
             </li>
             <li>
               <img src="./images/man3.jpg" alt="Николай Тарасов" width="270" height="260" />
-              <h3 class="man-name">Николай Тарасов</h3>
-              <p class="man-profession" lang="en">Marketing</p>
+              <div class="man">
+                <h3 class="man-name">Николай Тарасов</h3>
+                <p class="man-profession" lang="en">Marketing</p>
+              </div>
             </li>
             <li>
               <img src="./images/man4.jpg" alt="Михаил Ермаков" width="270" height="260" />
-              <h3 class="man-name">Михаил Ермаков</h3>
-              <p class="man-profession" lang="en">UI Designer</p>
+              <div class="man">
+                <h3 class="man-name">Михаил Ермаков</h3>
+                <p class="man-profession" lang="en">UI Designer</p>
+              </div>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
     <footer>
-      <section class="container section-footer">
-        <a class="link logo" href="./">Web<span class="logo-bottom">Studio</span></a>
+      <div class="container">
+        <a class="link logo logo-dw" href="./">Web<span class="logo-bottom">Studio</span></a>
         <address>г. Киев, пр-т Леси Украинки, 26</address>
         <ul class="list">
           <li>
@@ -113,7 +121,7 @@
           </li>
           <li><a class="link contact-bottom" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
-      </section>
+      </div>
     </footer>
   </body>
 </html>

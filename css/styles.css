@@ -20,7 +20,6 @@ p {
   padding: 0;
 }
 body {
-  width: 1600px;
   margin: 0 auto;
   font-family: Roboto, sans-serif;
   font-size: 14px;
@@ -60,6 +59,20 @@ body {
   font-size: 16px;
   cursor: pointer;
 }
+/* Визуальное скрытие заголовка */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 /* ************************************************************************************ */
 /* Хедер */
@@ -74,8 +87,6 @@ nav {
   align-items: center;
 }
 .logo {
-  margin-right: 93px;
-
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -83,6 +94,7 @@ nav {
   color: var(--accent-color);
 }
 .logo-top {
+  margin-right: 93px;
   color: var(--logo-top-color);
 }
 .list.contacts {
@@ -127,14 +139,16 @@ nav {
 
 /* *******************************  Страница Студия  ******************************* */
 /* Герой */
-.hiro {
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--background-color);
 
   background-color: var(--background-color-section);
 }
-.hiro-title {
+.hero-title {
   width: 696px;
   margin-bottom: 30px;
   margin-left: auto;
@@ -145,7 +159,7 @@ nav {
   line-height: 1.36;
   text-transform: uppercase;
 }
-.hiro-btn {
+.hero-btn {
   padding: 10px 32px;
 
   font-weight: 700;
@@ -207,7 +221,6 @@ nav {
 }
 .list.mans img {
   display: block;
-  margin-bottom: 30px;
 }
 
 .list.mans li {
@@ -219,6 +232,10 @@ nav {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+.man {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .man-name {
   margin-bottom: 10px;
 
@@ -227,9 +244,7 @@ nav {
   line-height: 1.19;
   color: var(--title--color);
 }
-.man-profession {
-  margin-bottom: 30px;
-}
+
 /* *******************************  Страница Портфолио  ******************************* */
 /* Фильтр навигации */
 .filter {
@@ -298,18 +313,19 @@ nav {
 }
 /* ************************************************************************************ */
 /* Подвал */
-.logo-bottom {
-  color: var(--background-color);
-}
 footer {
   background-color: var(--background-color-section);
-}
-.section-footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.logo-dw {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.logo-bottom {
+  color: var(--background-color);
+}
 address {
-  margin-top: 20px;
   margin-bottom: 9px;
 
   font-size: 14px;
@@ -325,6 +341,6 @@ address {
 .contact-bottom:focus {
   color: var(--accent-color);
 }
-.section-footer ul > li + li {
+footer ul > li + li {
   margin-top: 9px;
 }
